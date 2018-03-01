@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>e-Rario </title>
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+    <table>
+      <tr>
+        <th>
+        <img src="ull.jpg" alt="ULL" width= 30%/>
+      </th>
+      <td >
+        <h2> e-Rario </h2>
+      </td>
+      <t></td>
+    </table>
+    <p>Nuestro proyecto es un <strong> horario virtual </strong>, que nos permitir&aacute organizar cada semana de forma adecuada. </p>
+    <p>Está desarrollado para una asignatura de la <a href="www.ull.es" name="ULL"> Universidad Laboral de la Laguna</a></p>
+    <h4>Esta herramienta nos permite:</h4>
+      <ul>
+        <li><em>Notificaciones</em></li>
+        <li><em>Elementos de ayuda. <em></li>
+      </ul>
+      <h4>Adem&aacutes, proporcionará:</h4>
+      <ol>
+        <li>Ayuda para organizar cada semana.</li>
+        <li>Posibilidad de añadir elementos a una sola semana.</li>
+        <li>Funcion de alarma con tiempo de antelación ante trabajos prácticas y exámenes</li>
+      </ol>
+      <form method="" action="">
+        <h4> Informaci&oacuten de usuarios interesados </h4>
+        <fieldset>
+          <legend>Grupo 7 </legend>
+          <label>Nombre: </label>
+          <input type="text" id="n" alt="Nombre"/>
+          <br> </br>
+          <label> Curso: </label>
+          <select id= "c">
+            <option> 1 </option>
+            <option> 2 </option>
+            <option> 3 </option>
+            <option> 4 </option>
+          </select>
+          <br> </br>
+          <label>Información adicional: </label>
+          <br> </br>
+          <textarea id="ad"> </textarea>
+        </fieldset>
+
+      </form>
+      <button onClick="miFuncion();">Run</button>
+      <br></br>
+      <em>Ultimo foro registrado:</em>
+      <br></br>
+      <table>
+        <tr>
+          <th>Nombre: </th>
+          <td> <span class="output" id="lastUser"></span> </td>
+        </tr>
+        <tr>
+          <th>Curso: </th>
+          <td> <span class="output" id="lastCurso"></span> </td>
+        </tr>
+        <tr>
+          <th>Descripcion: </th>
+          <td> <span class="output" id="lastDesc"></span> </td>
+        </tr>
+    </table>
+    <script>
+    function miFuncion(){
+
+      var name = n.value;
+      var curso = c.value;
+      var descripcion = ad.value;
+
+      lastUser.innerHTML = name;
+      lastCurso.innerHTML = curso;
+      lastDesc.innerHTML =  descripcion;
+    }
+  </script>
+  </body>
+
+</html>
